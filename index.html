@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Demonstração simples do fluxo Git Flow.">
+    <title>Onion Git Flow Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="intro">
+        <p class="eyebrow">Onion Bootcamp · demonstração</p>
+        <h1>Um fluxo claro, do desenvolvimento à produção.</h1>
+        <p class="summary">
+          Um exemplo visual e pequeno para praticar Git Flow, Conventional Commits e revisão por Pull Request.
+        </p>
+      </header>
+
+      <section class="flow" aria-labelledby="flow-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Ciclo de trabalho</p>
+            <h2 id="flow-title">Git Flow em três etapas</h2>
+          </div>
+          <span class="badge">Projeto demonstrativo</span>
+        </div>
+
+        <ol class="steps" aria-label="Etapas do fluxo Git Flow">
+          <li class="step is-current" data-step="0">
+            <span class="step-number">01</span>
+            <div>
+              <h3>feature/nova-ideia</h3>
+              <p>Implemente a mudança em uma branch criada a partir de <code>develop</code>.</p>
+            </div>
+          </li>
+          <li class="step" data-step="1">
+            <span class="step-number">02</span>
+            <div>
+              <h3>develop</h3>
+              <p>Abra um Pull Request, solicite revisão e integre a feature aprovada.</p>
+            </div>
+          </li>
+          <li class="step" data-step="2">
+            <span class="step-number">03</span>
+            <div>
+              <h3>main</h3>
+              <p>Promova uma versão validada de <code>develop</code> para produção.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="flow-action">
+          <p id="flow-status" aria-live="polite">Etapa atual: feature</p>
+          <button id="next-step" type="button">Avançar etapa</button>
+        </div>
+      </section>
+
+      <section class="commits" aria-labelledby="commits-title">
+        <p class="eyebrow">Histórico legível</p>
+        <h2 id="commits-title">Commits convencionais</h2>
+        <ul class="commit-list">
+          <li><code>docs:</code> documenta o fluxo gitflow</li>
+          <li><code>feat:</code> cria demonstração visual</li>
+          <li><code>style:</code> melhora a apresentação</li>
+          <li><code>fix:</code> corrige um detalhe</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>Exemplo de estudo — sem integração ou serviço externo.</p>
+      </footer>
+    </main>
+  </body>
+</html>
