@@ -63,3 +63,7 @@ O que esta mudança resolve ou demonstra?
 ## Verificação
 Como a mudança foi verificada?
 ```
+
+## Contribuidores
+Anderson Moura (@andersonmoura87)
+Dani Losekan (Onion Bootcamp)
